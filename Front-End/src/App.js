@@ -1,6 +1,8 @@
 import React from "react";
 import Registro from "./proyecto/Registro";
 import Login from "./proyecto/Login";
+import { Navigate} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ListaCompras from "./proyecto/ListaCompras";
 
 function App() {

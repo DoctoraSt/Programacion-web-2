@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import { Navigate, Link } from 'react-router-dom';
 import '../CSS/registro.css';
-import axios from 'axios';
+import axios from "axios";
 
 function Registro(){
     const [usuario, setUsuario] = useState('');

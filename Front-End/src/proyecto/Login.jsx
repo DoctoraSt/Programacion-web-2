@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Navigate,Link} from "react-router-dom";
 import '../CSS/login.css';
 import axios from 'axios';
 
@@ -9,9 +10,6 @@ function Login(){
     const [message, setMessage] = useState('');
     const [loggedIn, setLoggedIn] = useState(false);
 
-    useEffect(()=>{
-        localStorage.removeItem('sesion');
-    }, []);
 
     const handleLogin = () =>{
         if(!usuario || !pass){
@@ -62,7 +60,7 @@ function Login(){
 
             <div>
                 <p>¿Aún no cuentas con tu cuenta?</p>
-                <Liink to ="./Registro">Registrate aquí</Liink>
+                <Link to ="./Registro">Registrate aquí</Link>
             </div>
             {message && <p>{message}</p>}
         </div>
