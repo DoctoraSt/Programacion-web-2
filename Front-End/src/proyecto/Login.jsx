@@ -36,11 +36,12 @@ function Login(){
     }
 
     return(
-        <div>
+        <div class="fondo">
             <div>
-                <h1>No sé como llamar a la app</h1>
+                <h1>Lista de compras</h1>
             </div>
 
+            <label>Ingresa nombre de usuario</label>
             <input 
             type="text" 
             placeholder="Nombre de usuario"
@@ -60,7 +61,7 @@ function Login(){
 
             <div>
                 <p>¿Aún no cuentas con tu cuenta?</p>
-                <Link to ="./Registro">Registrate aquí</Link>
+                <Link to ="/registro">Registrate aquí</Link>
             </div>
             {message && <p>{message}</p>}
         </div>
