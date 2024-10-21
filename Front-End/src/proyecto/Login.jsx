@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Navigate,Link} from "react-router-dom";
 import '../CSS/login.css';
+import '../CSS/bootstrapCSS/bootstrap.css';
 import axios from 'axios';
 
 //Parte de arriba donde se coloca toda la lógica para cargar la información
@@ -37,26 +38,29 @@ function Login(){
 
     return(
         <div class="fondo">
-            <div>
+            <div class="col-1">
                 <h1>Lista de compras</h1>
             </div>
 
-            <label>Ingresa nombre de usuario</label>
-            <input 
-            type="text" 
-            placeholder="Nombre de usuario"
-            value={usuario}
-            onChange={(e) => setUsuario(e.target.value)}
-            />
+            <div class="col-2">
+                <label>Ingresa nombre de usuario</label>
+                <input 
+                type="text" 
+                placeholder="Nombre de usuario"
+                value={usuario}
+                onChange={(e) => setUsuario(e.target.value)}
+                />
 
-            <input type="password" 
-            placeholder="Contraseña"
-            value={pass}
-            onChange={(e)=> setPass(e.target.value)}
-            />
+                <label>Ingrese su contraseña</label>
+                <input type="password" 
+                placeholder="Contraseña"
+                value={pass}
+                onChange={(e)=> setPass(e.target.value)}
+                />
 
-            <div>
-                <button onClick={handleLogin}>Iniciar Sesión</button>
+                <div>
+                    <button onClick={handleLogin}>Iniciar Sesión</button>
+                </div>
             </div>
 
             <div>
