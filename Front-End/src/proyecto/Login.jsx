@@ -38,34 +38,42 @@ function Login(){
 
     return(
         <div class="fondo">
-            <div class="col-1">
-                <h1>Lista de compras</h1>
-            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <h1>Lista de compras</h1>
+                    </div>
 
-            <div class="col-2">
-                <label>Ingresa nombre de usuario</label>
-                <input 
-                type="text" 
-                placeholder="Nombre de usuario"
-                value={usuario}
-                onChange={(e) => setUsuario(e.target.value)}
-                />
-
-                <label>Ingrese su contraseña</label>
-                <input type="password" 
-                placeholder="Contraseña"
-                value={pass}
-                onChange={(e)=> setPass(e.target.value)}
-                />
-
-                <div>
-                    <button onClick={handleLogin}>Iniciar Sesión</button>
+                    <div class="col-6">
+                        <label>Ingresa nombre de usuario</label>
+                        <br/>
+                        <input 
+                        type="text" 
+                        placeholder="Nombre de usuario"
+                        value={usuario}
+                        onChange={(e) => setUsuario(e.target.value)}
+                        />
+                        <br/>
+                        <br/>
+                        <label>Ingrese su contraseña</label>
+                        <input type="password" 
+                        placeholder="Contraseña"
+                        value={pass}
+                        onChange={(e)=> setPass(e.target.value)}
+                        />
+                        <br/>
+                        <div>
+                            <button class="btn-blue" onClick={handleLogin}>Iniciar Sesión</button>
+                        </div>
+                        <div>
+                            <br/>
+                            <p>¿Aún no tienes tu cuenta?</p>
+                            <button>
+                                <Link to ="/registro">Registrate aquí</Link>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div>
-                <p>¿Aún no cuentas con tu cuenta?</p>
-                <Link to ="/registro">Registrate aquí</Link>
             </div>
             {message && <p>{message}</p>}
         </div>
