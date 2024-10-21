@@ -69,7 +69,7 @@ function Login(){
                             <br/>
                             <p>¿Aún no tienes tu cuenta?</p>
                             <button>
-                                <Link to ="/registro">Registrate aquí</Link>
+                                <Link to ="/registro" class="coustome-link">Registrate aquí</Link>
                             </button>
                         </div>
                     </div>

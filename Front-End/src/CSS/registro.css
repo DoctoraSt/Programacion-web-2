@@ -19,16 +19,7 @@ button:hover{
     color: #2B7B8C;
 }
 
-.button-inicio{
+.coustome-link{
     background-color: #2B7B8C;
     color: #BFBBB8;
-}
-
-.button-inicio > link{
-    color: #BFBBB8;
-}
-
-.button-inicio:hover{
-    background-color: #BFBBB8;
-    color: #2B7B8C;
 }

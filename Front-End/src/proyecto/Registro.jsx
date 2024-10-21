@@ -66,9 +66,9 @@ function Registro(){
                             <button onClick={sendDatos}>Registrar</button>
                         </div>
                         <br/>
-                        <div class="button-inicio">
-                            <Link to="/Login">¿Ya tienes cuenta? Iniciar sesión</Link>
-                        </div>
+                        <button>
+                            <Link to="/Login" class="coustome-link">¿Ya tienes cuenta? Iniciar sesión</Link>
+                        </button>
                     </div>
                     {message && <p>{message}</p>}
                     </>
