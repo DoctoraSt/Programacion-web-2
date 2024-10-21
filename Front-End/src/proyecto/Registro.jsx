@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import './CSS/registro.css'
+import '../CSS/registro.css';
 import axios from 'axios';
 
 function Registro(){
-    const [usuario, setUser] = useState('');
+    const [usuario, setUsuario] = useState('');
     const [email, setEmail] = useState('');
     const [pass, setPass] = useState('');
     const [message, setMessage] = useState('');
@@ -13,7 +13,7 @@ function Registro(){
         //Validaciones
 
         axios.post("http://localhost:3000/Lista",{
-            user: user,
+            usuario: usuario,
             email: email,
             pass: pass,
         }).then(() =>{
@@ -42,7 +42,7 @@ function Registro(){
 
             <>
             <input type="text" placeholder="Nombre de usuario" 
-            onChange={(e) =>{setUser(e.target.value)}}/>
+            onChange={(e) =>{setUsuario(e.target.value)}}/>
 
             <input type="email" placeholder="Correo electrónico"
             onChange={(e) =>{setEmail(e.target.value)}}/>
@@ -55,10 +55,12 @@ function Registro(){
             </div>
             <div class="button-inicio">
                 <p>¿Ya tienes tu cuenta?</p>
-                <Link to="/Login"></Link>
+                <Link to="./Login"></Link>
             </div>
             {message && <p>{message}</p>}
             </>
         </div>
     );
 }
+
+export default Registro;

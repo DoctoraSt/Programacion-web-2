@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import './CSS/login.css';
+import '../CSS/login.css';
 import axios from 'axios';
 
 //Parte de arriba donde se coloca toda la lógica para cargar la información
@@ -34,7 +34,7 @@ function Login(){
     };
 
     if(loggedIn){
-        return <Navigate to = "/ListaCompras" />;
+        return <Navigate to = "./ListaCompras" />;
     }
 
     return(
@@ -62,7 +62,7 @@ function Login(){
 
             <div>
                 <p>¿Aún no cuentas con tu cuenta?</p>
-                <Liink to ="/registro">Registrate aquí</Liink>
+                <Liink to ="./Registro">Registrate aquí</Liink>
             </div>
             {message && <p>{message}</p>}
         </div>

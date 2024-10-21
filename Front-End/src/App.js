@@ -1,7 +1,7 @@
 import React from "react";
-import Registro from "./Registro";
-import Login from "/Login";
-import ListaCompras from './proyecto/ListaCompras';
+import Registro from "./proyecto/Registro";
+import Login from "./proyecto/Login";
+import ListaCompras from "./proyecto/ListaCompras";
 
 function App() {
   return (
