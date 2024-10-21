@@ -3,3 +3,4 @@
 <p>Michelle Annahy Leal Flores 1849777</p>
 <p>Dharma Nirvana Sandoval Sanchez 1830593</p>
 <p>Raul Lopez Cavazos 1744896</p>
+<p>Juan Jose Pierluisi Nagaya 2034258</p>
