@@ -37,6 +37,7 @@ function Login(){
     }
 
     return(
+    <div class="image">
         <div class="fondo">
             <div class="container">
                 <div class="row">
@@ -77,6 +78,7 @@ function Login(){
             </div>
             {message && <p>{message}</p>}
         </div>
+    </div>
     );
 }
 
