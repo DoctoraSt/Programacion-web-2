@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Navigate, Link } from 'react-router-dom';
 import '../CSS/bootstrapCSS/bootstrap.css';
 import '../CSS/registro.css';
+import icono from '../CSS/images/list.png';
 import axios from "axios";
 
 function Registro(){
@@ -40,7 +41,8 @@ function Registro(){
                 <div class="row">
                     <div class="col-4">
                         <div>
-                            <h1>Lista de compras</h1>
+                            <h1>Shopping List</h1>
+                            <img src={icono} alt="icono" height={200} width={200}/>
                         </div>
                     </div>
 

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Navigate,Link} from "react-router-dom";
 import '../CSS/login.css';
 import '../CSS/bootstrapCSS/bootstrap.css';
+import icono from '../CSS/images/list.png';
 import axios from 'axios';
 
 //Parte de arriba donde se coloca toda la lógica para cargar la información
@@ -42,7 +43,8 @@ function Login(){
             <div class="container">
                 <div class="row">
                     <div class="col-4">
-                        <h1>Lista de compras</h1>
+                        <h1>Shopping List</h1>
+                        <img src={icono} alt="icono" height={200} width={200}/>
                     </div>
 
                     <div class="col-6">
