@@ -1,8 +1,8 @@
 import React from "react";
-import { Navigate, Link } from "react-router-dom";
-import '../CSS/login.css';
+import '../CSS/listacompras.css';
 import icono from '../CSS/images/list.png';
 import '../CSS/bootstrapCSS/bootstrap.css';
+
 
 function ListaCompras() {
     return (
@@ -45,9 +45,18 @@ function ListaCompras() {
             </div>
         </nav>
 
+        
+        <h1>Shopping List</h1>
+        <img src={icono} alt="icono" height={200} width={200} />
         <section>
-            {/* Agrega contenido aquí */}
+            <div className="container">
+                
+            </div>
         </section>
+
+        <footer>
+
+        </footer>
         </>
     );
 }

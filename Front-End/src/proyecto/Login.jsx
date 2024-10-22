@@ -38,16 +38,16 @@ function Login(){
     }
 
     return(
-    <div class="image">
-        <div class="fondo">
+    <div className="image">
+        <div className="fondo">
             <div class="container">
-                <div class="row">
-                    <div class="col-4">
+                <div className="row">
+                    <div className="col-4">
                         <h1>Shopping List</h1>
                         <img src={icono} alt="icono" height={200} width={200}/>
                     </div>
 
-                    <div class="col-6">
+                    <div className="col-6">
                         <label>Ingresa nombre de usuario</label>
                         <br/>
                         <input 
@@ -72,7 +72,7 @@ function Login(){
                             <br/>
                             <p>¿Aún no tienes tu cuenta?</p>
                             <button>
-                                <Link to ="/registro" class="coustome-link">Registrate aquí</Link>
+                                <Link to ="/registro" className="coustome-link">Registrate aquí</Link>
                             </button>
                         </div>
                     </div>

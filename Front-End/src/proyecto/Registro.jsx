@@ -36,10 +36,10 @@ function Registro(){
 
     return(
         //Primera división para colocar la imagen del proyecto
-        <div class="fondo">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">
+        <div className="fondo">
+            <div className="container">
+                <div className="row">
+                    <div className="col-4">
                         <div>
                             <h1>Shopping List</h1>
                             <img src={icono} alt="icono" height={200} width={200}/>
@@ -47,7 +47,7 @@ function Registro(){
                     </div>
 
                     <>
-                    <div class="col-6">
+                    <div className="col-6">
                         <h2>Crea un usuario</h2>
                         <label>Ingrese nombre de usuario:</label>
                         <input type="text" placeholder="Nombre de usuario" 

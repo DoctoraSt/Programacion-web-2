@@ -9,7 +9,6 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Redirecciona desde la ruta raíz ("/") a "/login" */}
         <Route path="/" element={<Navigate to="/login" />} />
 
         {/* Rutas con nombres más sencillos */}
