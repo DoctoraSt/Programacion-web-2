@@ -60,7 +60,7 @@ function ListaCompras() {
             <div className="container-lista col-5">
                 <h3>Si creas tu cuenta con nosotros, tendrás un descuento adicional en el envio</h3>
                 <div>
-                    <img src={carrito} alt="Ejemplo de carrito" height={100} width={200}/>
+                    <img src={carrito} alt="Ejemplo de carrito" height={100} width={100}/>
                 </div>
             </div>
         </div>
